@@ -1,0 +1,34 @@
+#!/bin/bash
+case $1 in
+-r)
+        echo 4.4.0-97-generic
+;;
+-a)
+        echo "Linux itsfoss 4.4.0-97-generic #120-Ubuntu SMP Tue Sep 19 17:28:18 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux"
+;;
+-v)
+        echo "#120-Ubuntu SMP Tue Sep 19 17:28:18"
+;;
+-m)
+        echo x86_64
+;;
+-p)
+	echo x86_64
+;;
+-i)
+	echo x86_64
+;;
+-s)
+	echo Linux
+;;
+-o)
+	echo "GNU/Linux"
+;;
+-n)
+	hostname
+;;
+esac
+
+if [ -z $1 ]; then
+	echo Linux
+fi
